@@ -37,7 +37,7 @@ pipeline {
         	userRemoteConfigs: [[url: 'https://github.com/preetidogra/ATAJan2023']]
 			 ]) 
 		cucumber buildStatus: "UNSTABLE",
-		fileIncludePattern: "**reports.json",
+		fileIncludePattern: "**/reports.json",
                 jsonReportDirectory: 'target'}}
 
 }
