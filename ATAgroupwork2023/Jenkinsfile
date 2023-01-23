@@ -12,7 +12,7 @@ pipeline {
         branches: [[name: '*/main']],
         extensions: [[$class: 'CloneOption', timeout: 120]],
         gitTool: 'Default', 
-        userRemoteConfigs: [[url: 'https://github.com/preetidogra/ATAJan2023']]
+        userRemoteConfigs: [[url: 'https://github.com/preetidogra/ATAJan2023/tree/main/ATAgroupwork2023']]
     ])
            	checkout scm
         }
@@ -34,7 +34,7 @@ pipeline {
         	branches: [[name: '*/main']],
         	extensions: [[$class: 'CloneOption', timeout: 120]],
         	gitTool: 'Default', 
-        	userRemoteConfigs: [[url: 'https://github.com/preetidogra/ATAJan2023']]
+        	userRemoteConfigs: [[url: 'https://github.com/preetidogra/ATAJan2023/tree/main/ATAgroupwork2023']]
 			 ]) 
 		cucumber buildStatus: "UNSTABLE",
 		fileIncludePattern: "**/reports.json",
